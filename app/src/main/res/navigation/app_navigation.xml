@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/launcher_title">
+
+    <fragment
+        android:id="@+id/launcher_title"
+        android:name="jp.s64.android.prototype.myechoapplication.TitleFragment"
+        android:label="@string/title"
+        tools:layout="@layout/title_fragment">
+        <action
+            android:id="@+id/action_launcher_title_to_flow_input"
+            app:destination="@id/flow_input" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flow_input"
+        android:name="jp.s64.android.prototype.myechoapplication.InputFragment"
+        android:label="@string/input"
+        tools:layout="@layout/input_fragment" >
+        <action
+            android:id="@+id/action_flow_input_to_flow_result"
+            app:destination="@id/flow_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flow_result"
+        android:name="jp.s64.android.prototype.myechoapplication.ResultFragment"
+        android:label="@string/result"
+        tools:layout="@layout/result_fragment" >
+        <argument
+            android:name="input_text"
+            android:defaultValue="No Input!"
+            app:type="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screen_about"
+        android:name="jp.s64.android.prototype.myechoapplication.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/about_fragment">
+
+        <deepLink app:uri="http://example.com/about"/>
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+
+/.idea/*
+!/.idea/navEditor.xml
+
+Thumbs.db
+.DS_Store
+/build
+/captures
+.externalNativeBuild

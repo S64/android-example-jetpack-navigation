@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Echo Application</string>
+
+    <string name="title">タイトル</string>
+    <string name="input">入力</string>
+    <string name="result">結果</string>
+    <string name="about">アバウト</string>
+
+</resources>
